@@ -13,7 +13,7 @@
 
 package io.tradewatch.client;
 
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-09-05T21:58:18.007791458Z[Etc/UTC]", comments = "Generator version: 7.9.0-SNAPSHOT")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-09-05T21:59:32.038771427Z[Etc/UTC]", comments = "Generator version: 7.9.0-SNAPSHOT")
 public class Configuration {
     public static final String VERSION = "3.1.0";
 

@@ -48,7 +48,7 @@ import io.tradewatch.client.JSON;
 /**
  * Data transfer
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-09-05T21:58:18.007791458Z[Etc/UTC]", comments = "Generator version: 7.9.0-SNAPSHOT")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-09-05T21:59:32.038771427Z[Etc/UTC]", comments = "Generator version: 7.9.0-SNAPSHOT")
 public class ApiUsageDataTransfer {
   public static final String SERIALIZED_NAME_REQUEST = "request";
   @SerializedName(SERIALIZED_NAME_REQUEST)
