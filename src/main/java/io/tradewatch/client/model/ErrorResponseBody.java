@@ -49,7 +49,7 @@ import io.tradewatch.client.JSON;
 /**
  * ErrorResponseBody
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-09-05T21:54:59.287221838Z[Etc/UTC]", comments = "Generator version: 7.9.0-SNAPSHOT")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-09-05T21:58:18.007791458Z[Etc/UTC]", comments = "Generator version: 7.9.0-SNAPSHOT")
 public class ErrorResponseBody {
   public static final String SERIALIZED_NAME_ERROR = "error";
   @SerializedName(SERIALIZED_NAME_ERROR)
