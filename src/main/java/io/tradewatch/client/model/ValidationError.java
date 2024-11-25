@@ -51,24 +51,27 @@ import io.tradewatch.client.JSON;
 /**
  * ValidationError
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-09-05T21:59:32.038771427Z[Etc/UTC]", comments = "Generator version: 7.9.0-SNAPSHOT")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-25T22:27:17.622592162Z[Etc/UTC]", comments = "Generator version: 7.11.0-SNAPSHOT")
 public class ValidationError {
   public static final String SERIALIZED_NAME_LOC = "loc";
   @SerializedName(SERIALIZED_NAME_LOC)
+  @javax.annotation.Nonnull
   private List<ValidationErrorLocInner> loc = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_MSG = "msg";
   @SerializedName(SERIALIZED_NAME_MSG)
+  @javax.annotation.Nonnull
   private String msg;
 
   public static final String SERIALIZED_NAME_TYPE = "type";
   @SerializedName(SERIALIZED_NAME_TYPE)
+  @javax.annotation.Nonnull
   private String type;
 
   public ValidationError() {
   }
 
-  public ValidationError loc(List<ValidationErrorLocInner> loc) {
+  public ValidationError loc(@javax.annotation.Nonnull List<ValidationErrorLocInner> loc) {
     this.loc = loc;
     return this;
   }
@@ -90,12 +93,12 @@ public class ValidationError {
     return loc;
   }
 
-  public void setLoc(List<ValidationErrorLocInner> loc) {
+  public void setLoc(@javax.annotation.Nonnull List<ValidationErrorLocInner> loc) {
     this.loc = loc;
   }
 
 
-  public ValidationError msg(String msg) {
+  public ValidationError msg(@javax.annotation.Nonnull String msg) {
     this.msg = msg;
     return this;
   }
@@ -109,12 +112,12 @@ public class ValidationError {
     return msg;
   }
 
-  public void setMsg(String msg) {
+  public void setMsg(@javax.annotation.Nonnull String msg) {
     this.msg = msg;
   }
 
 
-  public ValidationError type(String type) {
+  public ValidationError type(@javax.annotation.Nonnull String type) {
     this.type = type;
     return this;
   }
@@ -128,7 +131,7 @@ public class ValidationError {
     return type;
   }
 
-  public void setType(String type) {
+  public void setType(@javax.annotation.Nonnull String type) {
     this.type = type;
   }
 

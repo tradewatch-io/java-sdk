@@ -49,20 +49,22 @@ import io.tradewatch.client.JSON;
 /**
  * Usage history entry
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-09-05T21:59:32.038771427Z[Etc/UTC]", comments = "Generator version: 7.9.0-SNAPSHOT")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-25T22:27:17.622592162Z[Etc/UTC]", comments = "Generator version: 7.11.0-SNAPSHOT")
 public class ApiUsageEntry {
   public static final String SERIALIZED_NAME_REQUESTS = "requests";
   @SerializedName(SERIALIZED_NAME_REQUESTS)
+  @javax.annotation.Nonnull
   private Integer requests;
 
   public static final String SERIALIZED_NAME_DATA = "data";
   @SerializedName(SERIALIZED_NAME_DATA)
+  @javax.annotation.Nonnull
   private ApiUsageDataTransfer data;
 
   public ApiUsageEntry() {
   }
 
-  public ApiUsageEntry requests(Integer requests) {
+  public ApiUsageEntry requests(@javax.annotation.Nonnull Integer requests) {
     this.requests = requests;
     return this;
   }
@@ -76,12 +78,12 @@ public class ApiUsageEntry {
     return requests;
   }
 
-  public void setRequests(Integer requests) {
+  public void setRequests(@javax.annotation.Nonnull Integer requests) {
     this.requests = requests;
   }
 
 
-  public ApiUsageEntry data(ApiUsageDataTransfer data) {
+  public ApiUsageEntry data(@javax.annotation.Nonnull ApiUsageDataTransfer data) {
     this.data = data;
     return this;
   }
@@ -95,7 +97,7 @@ public class ApiUsageEntry {
     return data;
   }
 
-  public void setData(ApiUsageDataTransfer data) {
+  public void setData(@javax.annotation.Nonnull ApiUsageDataTransfer data) {
     this.data = data;
   }
 

@@ -49,32 +49,37 @@ import io.tradewatch.client.JSON;
 /**
  * LastQuote
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-09-05T21:59:32.038771427Z[Etc/UTC]", comments = "Generator version: 7.9.0-SNAPSHOT")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-25T22:27:17.622592162Z[Etc/UTC]", comments = "Generator version: 7.11.0-SNAPSHOT")
 public class LastQuote {
   public static final String SERIALIZED_NAME_SYMBOL = "symbol";
   @SerializedName(SERIALIZED_NAME_SYMBOL)
+  @javax.annotation.Nonnull
   private String symbol;
 
   public static final String SERIALIZED_NAME_ASK = "ask";
   @SerializedName(SERIALIZED_NAME_ASK)
+  @javax.annotation.Nonnull
   private BigDecimal ask;
 
   public static final String SERIALIZED_NAME_BID = "bid";
   @SerializedName(SERIALIZED_NAME_BID)
+  @javax.annotation.Nonnull
   private BigDecimal bid;
 
   public static final String SERIALIZED_NAME_MID = "mid";
   @SerializedName(SERIALIZED_NAME_MID)
+  @javax.annotation.Nonnull
   private BigDecimal mid;
 
   public static final String SERIALIZED_NAME_TIMESTAMP = "timestamp";
   @SerializedName(SERIALIZED_NAME_TIMESTAMP)
+  @javax.annotation.Nonnull
   private Integer timestamp;
 
   public LastQuote() {
   }
 
-  public LastQuote symbol(String symbol) {
+  public LastQuote symbol(@javax.annotation.Nonnull String symbol) {
     this.symbol = symbol;
     return this;
   }
@@ -88,12 +93,12 @@ public class LastQuote {
     return symbol;
   }
 
-  public void setSymbol(String symbol) {
+  public void setSymbol(@javax.annotation.Nonnull String symbol) {
     this.symbol = symbol;
   }
 
 
-  public LastQuote ask(BigDecimal ask) {
+  public LastQuote ask(@javax.annotation.Nonnull BigDecimal ask) {
     this.ask = ask;
     return this;
   }
@@ -107,12 +112,12 @@ public class LastQuote {
     return ask;
   }
 
-  public void setAsk(BigDecimal ask) {
+  public void setAsk(@javax.annotation.Nonnull BigDecimal ask) {
     this.ask = ask;
   }
 
 
-  public LastQuote bid(BigDecimal bid) {
+  public LastQuote bid(@javax.annotation.Nonnull BigDecimal bid) {
     this.bid = bid;
     return this;
   }
@@ -126,12 +131,12 @@ public class LastQuote {
     return bid;
   }
 
-  public void setBid(BigDecimal bid) {
+  public void setBid(@javax.annotation.Nonnull BigDecimal bid) {
     this.bid = bid;
   }
 
 
-  public LastQuote mid(BigDecimal mid) {
+  public LastQuote mid(@javax.annotation.Nonnull BigDecimal mid) {
     this.mid = mid;
     return this;
   }
@@ -145,12 +150,12 @@ public class LastQuote {
     return mid;
   }
 
-  public void setMid(BigDecimal mid) {
+  public void setMid(@javax.annotation.Nonnull BigDecimal mid) {
     this.mid = mid;
   }
 
 
-  public LastQuote timestamp(Integer timestamp) {
+  public LastQuote timestamp(@javax.annotation.Nonnull Integer timestamp) {
     this.timestamp = timestamp;
     return this;
   }
@@ -164,7 +169,7 @@ public class LastQuote {
     return timestamp;
   }
 
-  public void setTimestamp(Integer timestamp) {
+  public void setTimestamp(@javax.annotation.Nonnull Integer timestamp) {
     this.timestamp = timestamp;
   }
 

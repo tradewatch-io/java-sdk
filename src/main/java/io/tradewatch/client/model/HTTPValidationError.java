@@ -51,16 +51,17 @@ import io.tradewatch.client.JSON;
 /**
  * HTTPValidationError
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-09-05T21:59:32.038771427Z[Etc/UTC]", comments = "Generator version: 7.9.0-SNAPSHOT")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-25T22:27:17.622592162Z[Etc/UTC]", comments = "Generator version: 7.11.0-SNAPSHOT")
 public class HTTPValidationError {
   public static final String SERIALIZED_NAME_DETAIL = "detail";
   @SerializedName(SERIALIZED_NAME_DETAIL)
+  @javax.annotation.Nullable
   private List<ValidationError> detail = new ArrayList<>();
 
   public HTTPValidationError() {
   }
 
-  public HTTPValidationError detail(List<ValidationError> detail) {
+  public HTTPValidationError detail(@javax.annotation.Nullable List<ValidationError> detail) {
     this.detail = detail;
     return this;
   }
@@ -82,7 +83,7 @@ public class HTTPValidationError {
     return detail;
   }
 
-  public void setDetail(List<ValidationError> detail) {
+  public void setDetail(@javax.annotation.Nullable List<ValidationError> detail) {
     this.detail = detail;
   }
 

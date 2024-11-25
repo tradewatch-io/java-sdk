@@ -49,16 +49,17 @@ import io.tradewatch.client.JSON;
 /**
  * ErrorResponseBody
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-09-05T21:59:32.038771427Z[Etc/UTC]", comments = "Generator version: 7.9.0-SNAPSHOT")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-25T22:27:17.622592162Z[Etc/UTC]", comments = "Generator version: 7.11.0-SNAPSHOT")
 public class ErrorResponseBody {
   public static final String SERIALIZED_NAME_ERROR = "error";
   @SerializedName(SERIALIZED_NAME_ERROR)
+  @javax.annotation.Nonnull
   private ErrorDetails error;
 
   public ErrorResponseBody() {
   }
 
-  public ErrorResponseBody error(ErrorDetails error) {
+  public ErrorResponseBody error(@javax.annotation.Nonnull ErrorDetails error) {
     this.error = error;
     return this;
   }
@@ -72,7 +73,7 @@ public class ErrorResponseBody {
     return error;
   }
 
-  public void setError(ErrorDetails error) {
+  public void setError(@javax.annotation.Nonnull ErrorDetails error) {
     this.error = error;
   }
 

@@ -51,24 +51,27 @@ import io.tradewatch.client.JSON;
 /**
  * CryptoConversion
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-09-05T21:59:32.038771427Z[Etc/UTC]", comments = "Generator version: 7.9.0-SNAPSHOT")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-25T22:27:17.622592162Z[Etc/UTC]", comments = "Generator version: 7.11.0-SNAPSHOT")
 public class CryptoConversion {
   public static final String SERIALIZED_NAME_INFO = "info";
   @SerializedName(SERIALIZED_NAME_INFO)
+  @javax.annotation.Nonnull
   private ConversionInfo info;
 
   public static final String SERIALIZED_NAME_QUERY = "query";
   @SerializedName(SERIALIZED_NAME_QUERY)
+  @javax.annotation.Nonnull
   private CryptoConversionQuery query;
 
   public static final String SERIALIZED_NAME_RESULT = "result";
   @SerializedName(SERIALIZED_NAME_RESULT)
+  @javax.annotation.Nonnull
   private BigDecimal result;
 
   public CryptoConversion() {
   }
 
-  public CryptoConversion info(ConversionInfo info) {
+  public CryptoConversion info(@javax.annotation.Nonnull ConversionInfo info) {
     this.info = info;
     return this;
   }
@@ -82,12 +85,12 @@ public class CryptoConversion {
     return info;
   }
 
-  public void setInfo(ConversionInfo info) {
+  public void setInfo(@javax.annotation.Nonnull ConversionInfo info) {
     this.info = info;
   }
 
 
-  public CryptoConversion query(CryptoConversionQuery query) {
+  public CryptoConversion query(@javax.annotation.Nonnull CryptoConversionQuery query) {
     this.query = query;
     return this;
   }
@@ -101,12 +104,12 @@ public class CryptoConversion {
     return query;
   }
 
-  public void setQuery(CryptoConversionQuery query) {
+  public void setQuery(@javax.annotation.Nonnull CryptoConversionQuery query) {
     this.query = query;
   }
 
 
-  public CryptoConversion result(BigDecimal result) {
+  public CryptoConversion result(@javax.annotation.Nonnull BigDecimal result) {
     this.result = result;
     return this;
   }
@@ -120,7 +123,7 @@ public class CryptoConversion {
     return result;
   }
 
-  public void setResult(BigDecimal result) {
+  public void setResult(@javax.annotation.Nonnull BigDecimal result) {
     this.result = result;
   }
 

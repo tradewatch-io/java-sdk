@@ -51,16 +51,17 @@ import io.tradewatch.client.JSON;
 /**
  * A list of commodity types
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-09-05T21:59:32.038771427Z[Etc/UTC]", comments = "Generator version: 7.9.0-SNAPSHOT")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-25T22:27:17.622592162Z[Etc/UTC]", comments = "Generator version: 7.11.0-SNAPSHOT")
 public class CommodityTypesList {
   public static final String SERIALIZED_NAME_ITEMS = "items";
   @SerializedName(SERIALIZED_NAME_ITEMS)
+  @javax.annotation.Nonnull
   private List<CommodityTypeObj> items = new ArrayList<>();
 
   public CommodityTypesList() {
   }
 
-  public CommodityTypesList items(List<CommodityTypeObj> items) {
+  public CommodityTypesList items(@javax.annotation.Nonnull List<CommodityTypeObj> items) {
     this.items = items;
     return this;
   }
@@ -82,7 +83,7 @@ public class CommodityTypesList {
     return items;
   }
 
-  public void setItems(List<CommodityTypeObj> items) {
+  public void setItems(@javax.annotation.Nonnull List<CommodityTypeObj> items) {
     this.items = items;
   }
 

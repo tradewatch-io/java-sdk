@@ -48,20 +48,22 @@ import io.tradewatch.client.JSON;
 /**
  * ErrorDetails
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-09-05T21:59:32.038771427Z[Etc/UTC]", comments = "Generator version: 7.9.0-SNAPSHOT")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-25T22:27:17.622592162Z[Etc/UTC]", comments = "Generator version: 7.11.0-SNAPSHOT")
 public class ErrorDetails {
   public static final String SERIALIZED_NAME_CODE = "code";
   @SerializedName(SERIALIZED_NAME_CODE)
+  @javax.annotation.Nonnull
   private Integer code;
 
   public static final String SERIALIZED_NAME_MESSAGE = "message";
   @SerializedName(SERIALIZED_NAME_MESSAGE)
+  @javax.annotation.Nonnull
   private String message;
 
   public ErrorDetails() {
   }
 
-  public ErrorDetails code(Integer code) {
+  public ErrorDetails code(@javax.annotation.Nonnull Integer code) {
     this.code = code;
     return this;
   }
@@ -75,12 +77,12 @@ public class ErrorDetails {
     return code;
   }
 
-  public void setCode(Integer code) {
+  public void setCode(@javax.annotation.Nonnull Integer code) {
     this.code = code;
   }
 
 
-  public ErrorDetails message(String message) {
+  public ErrorDetails message(@javax.annotation.Nonnull String message) {
     this.message = message;
     return this;
   }
@@ -94,7 +96,7 @@ public class ErrorDetails {
     return message;
   }
 
-  public void setMessage(String message) {
+  public void setMessage(@javax.annotation.Nonnull String message) {
     this.message = message;
   }
 

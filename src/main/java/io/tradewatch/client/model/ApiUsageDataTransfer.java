@@ -48,20 +48,22 @@ import io.tradewatch.client.JSON;
 /**
  * Data transfer
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-09-05T21:59:32.038771427Z[Etc/UTC]", comments = "Generator version: 7.9.0-SNAPSHOT")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-25T22:27:17.622592162Z[Etc/UTC]", comments = "Generator version: 7.11.0-SNAPSHOT")
 public class ApiUsageDataTransfer {
   public static final String SERIALIZED_NAME_REQUEST = "request";
   @SerializedName(SERIALIZED_NAME_REQUEST)
+  @javax.annotation.Nonnull
   private Integer request;
 
   public static final String SERIALIZED_NAME_RESPONSE = "response";
   @SerializedName(SERIALIZED_NAME_RESPONSE)
+  @javax.annotation.Nonnull
   private Integer response;
 
   public ApiUsageDataTransfer() {
   }
 
-  public ApiUsageDataTransfer request(Integer request) {
+  public ApiUsageDataTransfer request(@javax.annotation.Nonnull Integer request) {
     this.request = request;
     return this;
   }
@@ -75,12 +77,12 @@ public class ApiUsageDataTransfer {
     return request;
   }
 
-  public void setRequest(Integer request) {
+  public void setRequest(@javax.annotation.Nonnull Integer request) {
     this.request = request;
   }
 
 
-  public ApiUsageDataTransfer response(Integer response) {
+  public ApiUsageDataTransfer response(@javax.annotation.Nonnull Integer response) {
     this.response = response;
     return this;
   }
@@ -94,7 +96,7 @@ public class ApiUsageDataTransfer {
     return response;
   }
 
-  public void setResponse(Integer response) {
+  public void setResponse(@javax.annotation.Nonnull Integer response) {
     this.response = response;
   }
 

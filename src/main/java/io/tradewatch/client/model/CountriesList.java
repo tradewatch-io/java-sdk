@@ -51,16 +51,17 @@ import io.tradewatch.client.JSON;
 /**
  * A list of Countries
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-09-05T21:59:32.038771427Z[Etc/UTC]", comments = "Generator version: 7.9.0-SNAPSHOT")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-25T22:27:17.622592162Z[Etc/UTC]", comments = "Generator version: 7.11.0-SNAPSHOT")
 public class CountriesList {
   public static final String SERIALIZED_NAME_ITEMS = "items";
   @SerializedName(SERIALIZED_NAME_ITEMS)
+  @javax.annotation.Nonnull
   private List<CountryObj> items = new ArrayList<>();
 
   public CountriesList() {
   }
 
-  public CountriesList items(List<CountryObj> items) {
+  public CountriesList items(@javax.annotation.Nonnull List<CountryObj> items) {
     this.items = items;
     return this;
   }
@@ -82,7 +83,7 @@ public class CountriesList {
     return items;
   }
 
-  public void setItems(List<CountryObj> items) {
+  public void setItems(@javax.annotation.Nonnull List<CountryObj> items) {
     this.items = items;
   }
 

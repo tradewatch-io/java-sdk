@@ -48,16 +48,17 @@ import io.tradewatch.client.JSON;
 /**
  * CountryObj
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-09-05T21:59:32.038771427Z[Etc/UTC]", comments = "Generator version: 7.9.0-SNAPSHOT")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-25T22:27:17.622592162Z[Etc/UTC]", comments = "Generator version: 7.11.0-SNAPSHOT")
 public class CountryObj {
   public static final String SERIALIZED_NAME_SYMBOL = "symbol";
   @SerializedName(SERIALIZED_NAME_SYMBOL)
+  @javax.annotation.Nonnull
   private String symbol;
 
   public CountryObj() {
   }
 
-  public CountryObj symbol(String symbol) {
+  public CountryObj symbol(@javax.annotation.Nonnull String symbol) {
     this.symbol = symbol;
     return this;
   }
@@ -71,7 +72,7 @@ public class CountryObj {
     return symbol;
   }
 
-  public void setSymbol(String symbol) {
+  public void setSymbol(@javax.annotation.Nonnull String symbol) {
     this.symbol = symbol;
   }
 

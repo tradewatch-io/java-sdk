@@ -49,20 +49,22 @@ import io.tradewatch.client.JSON;
 /**
  * ConversionInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-09-05T21:59:32.038771427Z[Etc/UTC]", comments = "Generator version: 7.9.0-SNAPSHOT")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-25T22:27:17.622592162Z[Etc/UTC]", comments = "Generator version: 7.11.0-SNAPSHOT")
 public class ConversionInfo {
   public static final String SERIALIZED_NAME_TIMESTAMP = "timestamp";
   @SerializedName(SERIALIZED_NAME_TIMESTAMP)
+  @javax.annotation.Nonnull
   private Integer timestamp;
 
   public static final String SERIALIZED_NAME_RATE = "rate";
   @SerializedName(SERIALIZED_NAME_RATE)
+  @javax.annotation.Nonnull
   private BigDecimal rate;
 
   public ConversionInfo() {
   }
 
-  public ConversionInfo timestamp(Integer timestamp) {
+  public ConversionInfo timestamp(@javax.annotation.Nonnull Integer timestamp) {
     this.timestamp = timestamp;
     return this;
   }
@@ -76,12 +78,12 @@ public class ConversionInfo {
     return timestamp;
   }
 
-  public void setTimestamp(Integer timestamp) {
+  public void setTimestamp(@javax.annotation.Nonnull Integer timestamp) {
     this.timestamp = timestamp;
   }
 
 
-  public ConversionInfo rate(BigDecimal rate) {
+  public ConversionInfo rate(@javax.annotation.Nonnull BigDecimal rate) {
     this.rate = rate;
     return this;
   }
@@ -95,7 +97,7 @@ public class ConversionInfo {
     return rate;
   }
 
-  public void setRate(BigDecimal rate) {
+  public void setRate(@javax.annotation.Nonnull BigDecimal rate) {
     this.rate = rate;
   }
 

@@ -48,20 +48,22 @@ import io.tradewatch.client.JSON;
 /**
  * SymbolsOutFull
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-09-05T21:59:32.038771427Z[Etc/UTC]", comments = "Generator version: 7.9.0-SNAPSHOT")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-25T22:27:17.622592162Z[Etc/UTC]", comments = "Generator version: 7.11.0-SNAPSHOT")
 public class SymbolsOutFull {
   public static final String SERIALIZED_NAME_SYMBOL = "symbol";
   @SerializedName(SERIALIZED_NAME_SYMBOL)
+  @javax.annotation.Nonnull
   private String symbol;
 
   public static final String SERIALIZED_NAME_NAME = "name";
   @SerializedName(SERIALIZED_NAME_NAME)
+  @javax.annotation.Nonnull
   private String name;
 
   public SymbolsOutFull() {
   }
 
-  public SymbolsOutFull symbol(String symbol) {
+  public SymbolsOutFull symbol(@javax.annotation.Nonnull String symbol) {
     this.symbol = symbol;
     return this;
   }
@@ -75,12 +77,12 @@ public class SymbolsOutFull {
     return symbol;
   }
 
-  public void setSymbol(String symbol) {
+  public void setSymbol(@javax.annotation.Nonnull String symbol) {
     this.symbol = symbol;
   }
 
 
-  public SymbolsOutFull name(String name) {
+  public SymbolsOutFull name(@javax.annotation.Nonnull String name) {
     this.name = name;
     return this;
   }
@@ -94,7 +96,7 @@ public class SymbolsOutFull {
     return name;
   }
 
-  public void setName(String name) {
+  public void setName(@javax.annotation.Nonnull String name) {
     this.name = name;
   }
 

@@ -52,36 +52,42 @@ import io.tradewatch.client.JSON;
 /**
  * CursorPageTCustomizedSymbolsOutFull
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-09-05T21:59:32.038771427Z[Etc/UTC]", comments = "Generator version: 7.9.0-SNAPSHOT")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-25T22:27:17.622592162Z[Etc/UTC]", comments = "Generator version: 7.11.0-SNAPSHOT")
 public class CursorPageTCustomizedSymbolsOutFull {
   public static final String SERIALIZED_NAME_ITEMS = "items";
   @SerializedName(SERIALIZED_NAME_ITEMS)
+  @javax.annotation.Nonnull
   private List<SymbolsOutFull> items = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_TOTAL = "total";
   @SerializedName(SERIALIZED_NAME_TOTAL)
+  @javax.annotation.Nullable
   private Integer total;
 
   public static final String SERIALIZED_NAME_CURRENT_PAGE = "current_page";
   @SerializedName(SERIALIZED_NAME_CURRENT_PAGE)
+  @javax.annotation.Nullable
   private String currentPage;
 
   public static final String SERIALIZED_NAME_CURRENT_PAGE_BACKWARDS = "current_page_backwards";
   @SerializedName(SERIALIZED_NAME_CURRENT_PAGE_BACKWARDS)
+  @javax.annotation.Nullable
   private String currentPageBackwards;
 
   public static final String SERIALIZED_NAME_PREVIOUS_PAGE = "previous_page";
   @SerializedName(SERIALIZED_NAME_PREVIOUS_PAGE)
+  @javax.annotation.Nullable
   private String previousPage;
 
   public static final String SERIALIZED_NAME_NEXT_PAGE = "next_page";
   @SerializedName(SERIALIZED_NAME_NEXT_PAGE)
+  @javax.annotation.Nullable
   private String nextPage;
 
   public CursorPageTCustomizedSymbolsOutFull() {
   }
 
-  public CursorPageTCustomizedSymbolsOutFull items(List<SymbolsOutFull> items) {
+  public CursorPageTCustomizedSymbolsOutFull items(@javax.annotation.Nonnull List<SymbolsOutFull> items) {
     this.items = items;
     return this;
   }
@@ -103,12 +109,12 @@ public class CursorPageTCustomizedSymbolsOutFull {
     return items;
   }
 
-  public void setItems(List<SymbolsOutFull> items) {
+  public void setItems(@javax.annotation.Nonnull List<SymbolsOutFull> items) {
     this.items = items;
   }
 
 
-  public CursorPageTCustomizedSymbolsOutFull total(Integer total) {
+  public CursorPageTCustomizedSymbolsOutFull total(@javax.annotation.Nullable Integer total) {
     this.total = total;
     return this;
   }
@@ -122,12 +128,12 @@ public class CursorPageTCustomizedSymbolsOutFull {
     return total;
   }
 
-  public void setTotal(Integer total) {
+  public void setTotal(@javax.annotation.Nullable Integer total) {
     this.total = total;
   }
 
 
-  public CursorPageTCustomizedSymbolsOutFull currentPage(String currentPage) {
+  public CursorPageTCustomizedSymbolsOutFull currentPage(@javax.annotation.Nullable String currentPage) {
     this.currentPage = currentPage;
     return this;
   }
@@ -141,12 +147,12 @@ public class CursorPageTCustomizedSymbolsOutFull {
     return currentPage;
   }
 
-  public void setCurrentPage(String currentPage) {
+  public void setCurrentPage(@javax.annotation.Nullable String currentPage) {
     this.currentPage = currentPage;
   }
 
 
-  public CursorPageTCustomizedSymbolsOutFull currentPageBackwards(String currentPageBackwards) {
+  public CursorPageTCustomizedSymbolsOutFull currentPageBackwards(@javax.annotation.Nullable String currentPageBackwards) {
     this.currentPageBackwards = currentPageBackwards;
     return this;
   }
@@ -160,12 +166,12 @@ public class CursorPageTCustomizedSymbolsOutFull {
     return currentPageBackwards;
   }
 
-  public void setCurrentPageBackwards(String currentPageBackwards) {
+  public void setCurrentPageBackwards(@javax.annotation.Nullable String currentPageBackwards) {
     this.currentPageBackwards = currentPageBackwards;
   }
 
 
-  public CursorPageTCustomizedSymbolsOutFull previousPage(String previousPage) {
+  public CursorPageTCustomizedSymbolsOutFull previousPage(@javax.annotation.Nullable String previousPage) {
     this.previousPage = previousPage;
     return this;
   }
@@ -179,12 +185,12 @@ public class CursorPageTCustomizedSymbolsOutFull {
     return previousPage;
   }
 
-  public void setPreviousPage(String previousPage) {
+  public void setPreviousPage(@javax.annotation.Nullable String previousPage) {
     this.previousPage = previousPage;
   }
 
 
-  public CursorPageTCustomizedSymbolsOutFull nextPage(String nextPage) {
+  public CursorPageTCustomizedSymbolsOutFull nextPage(@javax.annotation.Nullable String nextPage) {
     this.nextPage = nextPage;
     return this;
   }
@@ -198,7 +204,7 @@ public class CursorPageTCustomizedSymbolsOutFull {
     return nextPage;
   }
 
-  public void setNextPage(String nextPage) {
+  public void setNextPage(@javax.annotation.Nullable String nextPage) {
     this.nextPage = nextPage;
   }
 

@@ -49,28 +49,32 @@ import io.tradewatch.client.JSON;
 /**
  * ConversionQuery
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-09-05T21:59:32.038771427Z[Etc/UTC]", comments = "Generator version: 7.9.0-SNAPSHOT")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-25T22:27:17.622592162Z[Etc/UTC]", comments = "Generator version: 7.11.0-SNAPSHOT")
 public class ConversionQuery {
   public static final String SERIALIZED_NAME_FROM = "from";
   @SerializedName(SERIALIZED_NAME_FROM)
+  @javax.annotation.Nonnull
   private String from;
 
   public static final String SERIALIZED_NAME_TO = "to";
   @SerializedName(SERIALIZED_NAME_TO)
+  @javax.annotation.Nonnull
   private String to;
 
   public static final String SERIALIZED_NAME_AMOUNT = "amount";
   @SerializedName(SERIALIZED_NAME_AMOUNT)
+  @javax.annotation.Nullable
   private BigDecimal amount = new BigDecimal("10");
 
   public static final String SERIALIZED_NAME_PRECISION = "precision";
   @SerializedName(SERIALIZED_NAME_PRECISION)
+  @javax.annotation.Nullable
   private Integer precision = 5;
 
   public ConversionQuery() {
   }
 
-  public ConversionQuery from(String from) {
+  public ConversionQuery from(@javax.annotation.Nonnull String from) {
     this.from = from;
     return this;
   }
@@ -84,12 +88,12 @@ public class ConversionQuery {
     return from;
   }
 
-  public void setFrom(String from) {
+  public void setFrom(@javax.annotation.Nonnull String from) {
     this.from = from;
   }
 
 
-  public ConversionQuery to(String to) {
+  public ConversionQuery to(@javax.annotation.Nonnull String to) {
     this.to = to;
     return this;
   }
@@ -103,12 +107,12 @@ public class ConversionQuery {
     return to;
   }
 
-  public void setTo(String to) {
+  public void setTo(@javax.annotation.Nonnull String to) {
     this.to = to;
   }
 
 
-  public ConversionQuery amount(BigDecimal amount) {
+  public ConversionQuery amount(@javax.annotation.Nullable BigDecimal amount) {
     this.amount = amount;
     return this;
   }
@@ -123,12 +127,12 @@ public class ConversionQuery {
     return amount;
   }
 
-  public void setAmount(BigDecimal amount) {
+  public void setAmount(@javax.annotation.Nullable BigDecimal amount) {
     this.amount = amount;
   }
 
 
-  public ConversionQuery precision(Integer precision) {
+  public ConversionQuery precision(@javax.annotation.Nullable Integer precision) {
     this.precision = precision;
     return this;
   }
@@ -142,7 +146,7 @@ public class ConversionQuery {
     return precision;
   }
 
-  public void setPrecision(Integer precision) {
+  public void setPrecision(@javax.annotation.Nullable Integer precision) {
     this.precision = precision;
   }
 
