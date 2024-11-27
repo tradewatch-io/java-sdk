@@ -104,6 +104,8 @@ public class JSON {
         gsonBuilder.registerTypeAdapterFactory(new io.tradewatch.client.model.CountryObj.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new io.tradewatch.client.model.CryptoConversion.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new io.tradewatch.client.model.CryptoConversionQuery.CustomTypeAdapterFactory());
+        gsonBuilder.registerTypeAdapterFactory(new io.tradewatch.client.model.CryptoExchangeItem.CustomTypeAdapterFactory());
+        gsonBuilder.registerTypeAdapterFactory(new io.tradewatch.client.model.CryptoExchangesList.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new io.tradewatch.client.model.CursorPageTCustomizedSymbolsOutFull.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new io.tradewatch.client.model.ErrorDetails.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new io.tradewatch.client.model.ErrorResponseBody.CustomTypeAdapterFactory());

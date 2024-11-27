@@ -19,11 +19,11 @@ import com.google.gson.annotations.JsonAdapter;
 import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
-import io.tradewatch.client.model.ConversionInfo;
-import io.tradewatch.client.model.ConversionQuery;
+import io.tradewatch.client.model.CryptoExchangeItem;
 import java.io.IOException;
-import java.math.BigDecimal;
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
@@ -49,82 +49,42 @@ import java.util.Set;
 import io.tradewatch.client.JSON;
 
 /**
- * Conversion
+ * A list of cryptocurrency exchanges
  */
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-27T09:52:25.087567834Z[Etc/UTC]", comments = "Generator version: 7.11.0-SNAPSHOT")
-public class Conversion {
-  public static final String SERIALIZED_NAME_INFO = "info";
-  @SerializedName(SERIALIZED_NAME_INFO)
+public class CryptoExchangesList {
+  public static final String SERIALIZED_NAME_ITEMS = "items";
+  @SerializedName(SERIALIZED_NAME_ITEMS)
   @javax.annotation.Nonnull
-  private ConversionInfo info;
+  private List<CryptoExchangeItem> items = new ArrayList<>();
 
-  public static final String SERIALIZED_NAME_QUERY = "query";
-  @SerializedName(SERIALIZED_NAME_QUERY)
-  @javax.annotation.Nonnull
-  private ConversionQuery query;
-
-  public static final String SERIALIZED_NAME_RESULT = "result";
-  @SerializedName(SERIALIZED_NAME_RESULT)
-  @javax.annotation.Nonnull
-  private BigDecimal result;
-
-  public Conversion() {
+  public CryptoExchangesList() {
   }
 
-  public Conversion info(@javax.annotation.Nonnull ConversionInfo info) {
-    this.info = info;
+  public CryptoExchangesList items(@javax.annotation.Nonnull List<CryptoExchangeItem> items) {
+    this.items = items;
+    return this;
+  }
+
+  public CryptoExchangesList addItemsItem(CryptoExchangeItem itemsItem) {
+    if (this.items == null) {
+      this.items = new ArrayList<>();
+    }
+    this.items.add(itemsItem);
     return this;
   }
 
   /**
-   * Get info
-   * @return info
+   * Get items
+   * @return items
    */
   @javax.annotation.Nonnull
-  public ConversionInfo getInfo() {
-    return info;
+  public List<CryptoExchangeItem> getItems() {
+    return items;
   }
 
-  public void setInfo(@javax.annotation.Nonnull ConversionInfo info) {
-    this.info = info;
-  }
-
-
-  public Conversion query(@javax.annotation.Nonnull ConversionQuery query) {
-    this.query = query;
-    return this;
-  }
-
-  /**
-   * Get query
-   * @return query
-   */
-  @javax.annotation.Nonnull
-  public ConversionQuery getQuery() {
-    return query;
-  }
-
-  public void setQuery(@javax.annotation.Nonnull ConversionQuery query) {
-    this.query = query;
-  }
-
-
-  public Conversion result(@javax.annotation.Nonnull BigDecimal result) {
-    this.result = result;
-    return this;
-  }
-
-  /**
-   * Get result
-   * @return result
-   */
-  @javax.annotation.Nonnull
-  public BigDecimal getResult() {
-    return result;
-  }
-
-  public void setResult(@javax.annotation.Nonnull BigDecimal result) {
-    this.result = result;
+  public void setItems(@javax.annotation.Nonnull List<CryptoExchangeItem> items) {
+    this.items = items;
   }
 
 
@@ -137,24 +97,20 @@ public class Conversion {
     if (o == null || getClass() != o.getClass()) {
       return false;
     }
-    Conversion conversion = (Conversion) o;
-    return Objects.equals(this.info, conversion.info) &&
-        Objects.equals(this.query, conversion.query) &&
-        Objects.equals(this.result, conversion.result);
+    CryptoExchangesList cryptoExchangesList = (CryptoExchangesList) o;
+    return Objects.equals(this.items, cryptoExchangesList.items);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(info, query, result);
+    return Objects.hash(items);
   }
 
   @Override
   public String toString() {
     StringBuilder sb = new StringBuilder();
-    sb.append("class Conversion {\n");
-    sb.append("    info: ").append(toIndentedString(info)).append("\n");
-    sb.append("    query: ").append(toIndentedString(query)).append("\n");
-    sb.append("    result: ").append(toIndentedString(result)).append("\n");
+    sb.append("class CryptoExchangesList {\n");
+    sb.append("    items: ").append(toIndentedString(items)).append("\n");
     sb.append("}");
     return sb.toString();
   }
@@ -177,71 +133,73 @@ public class Conversion {
   static {
     // a set of all properties/fields (JSON key names)
     openapiFields = new HashSet<String>();
-    openapiFields.add("info");
-    openapiFields.add("query");
-    openapiFields.add("result");
+    openapiFields.add("items");
 
     // a set of required properties/fields (JSON key names)
     openapiRequiredFields = new HashSet<String>();
-    openapiRequiredFields.add("info");
-    openapiRequiredFields.add("query");
-    openapiRequiredFields.add("result");
+    openapiRequiredFields.add("items");
   }
 
   /**
    * Validates the JSON Element and throws an exception if issues found
    *
    * @param jsonElement JSON Element
-   * @throws IOException if the JSON Element is invalid with respect to Conversion
+   * @throws IOException if the JSON Element is invalid with respect to CryptoExchangesList
    */
   public static void validateJsonElement(JsonElement jsonElement) throws IOException {
       if (jsonElement == null) {
-        if (!Conversion.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
-          throw new IllegalArgumentException(String.format("The required field(s) %s in Conversion is not found in the empty JSON string", Conversion.openapiRequiredFields.toString()));
+        if (!CryptoExchangesList.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
+          throw new IllegalArgumentException(String.format("The required field(s) %s in CryptoExchangesList is not found in the empty JSON string", CryptoExchangesList.openapiRequiredFields.toString()));
         }
       }
 
       Set<Map.Entry<String, JsonElement>> entries = jsonElement.getAsJsonObject().entrySet();
       // check to see if the JSON string contains additional fields
       for (Map.Entry<String, JsonElement> entry : entries) {
-        if (!Conversion.openapiFields.contains(entry.getKey())) {
-          throw new IllegalArgumentException(String.format("The field `%s` in the JSON string is not defined in the `Conversion` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
+        if (!CryptoExchangesList.openapiFields.contains(entry.getKey())) {
+          throw new IllegalArgumentException(String.format("The field `%s` in the JSON string is not defined in the `CryptoExchangesList` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
         }
       }
 
       // check to make sure all required properties/fields are present in the JSON string
-      for (String requiredField : Conversion.openapiRequiredFields) {
+      for (String requiredField : CryptoExchangesList.openapiRequiredFields) {
         if (jsonElement.getAsJsonObject().get(requiredField) == null) {
           throw new IllegalArgumentException(String.format("The required field `%s` is not found in the JSON string: %s", requiredField, jsonElement.toString()));
         }
       }
         JsonObject jsonObj = jsonElement.getAsJsonObject();
-      // validate the required field `info`
-      ConversionInfo.validateJsonElement(jsonObj.get("info"));
-      // validate the required field `query`
-      ConversionQuery.validateJsonElement(jsonObj.get("query"));
+      // ensure the json data is an array
+      if (!jsonObj.get("items").isJsonArray()) {
+        throw new IllegalArgumentException(String.format("Expected the field `items` to be an array in the JSON string but got `%s`", jsonObj.get("items").toString()));
+      }
+
+      JsonArray jsonArrayitems = jsonObj.getAsJsonArray("items");
+      // validate the required field `items` (array)
+      for (int i = 0; i < jsonArrayitems.size(); i++) {
+        CryptoExchangeItem.validateJsonElement(jsonArrayitems.get(i));
+      };
   }
 
   public static class CustomTypeAdapterFactory implements TypeAdapterFactory {
     @SuppressWarnings("unchecked")
     @Override
     public <T> TypeAdapter<T> create(Gson gson, TypeToken<T> type) {
-       if (!Conversion.class.isAssignableFrom(type.getRawType())) {
-         return null; // this class only serializes 'Conversion' and its subtypes
+       if (!CryptoExchangesList.class.isAssignableFrom(type.getRawType())) {
+         return null; // this class only serializes 'CryptoExchangesList' and its subtypes
        }
        final TypeAdapter<JsonElement> elementAdapter = gson.getAdapter(JsonElement.class);
-       final TypeAdapter<Conversion> thisAdapter
-                        = gson.getDelegateAdapter(this, TypeToken.get(Conversion.class));
+       final TypeAdapter<CryptoExchangesList> thisAdapter
+                        = gson.getDelegateAdapter(this, TypeToken.get(CryptoExchangesList.class));
 
-       return (TypeAdapter<T>) new TypeAdapter<Conversion>() {
+       return (TypeAdapter<T>) new TypeAdapter<CryptoExchangesList>() {
            @Override
-           public void write(JsonWriter out, Conversion value) throws IOException {
+           public void write(JsonWriter out, CryptoExchangesList value) throws IOException {
              JsonObject obj = thisAdapter.toJsonTree(value).getAsJsonObject();
              elementAdapter.write(out, obj);
            }
 
            @Override
-           public Conversion read(JsonReader in) throws IOException {
+           public CryptoExchangesList read(JsonReader in) throws IOException {
              JsonElement jsonElement = elementAdapter.read(in);
              validateJsonElement(jsonElement);
              return thisAdapter.fromJsonTree(jsonElement);
@@ -252,18 +210,18 @@ public class Conversion {
   }
 
   /**
-   * Create an instance of Conversion given an JSON string
+   * Create an instance of CryptoExchangesList given an JSON string
    *
    * @param jsonString JSON string
-   * @return An instance of Conversion
-   * @throws IOException if the JSON string is invalid with respect to Conversion
+   * @return An instance of CryptoExchangesList
+   * @throws IOException if the JSON string is invalid with respect to CryptoExchangesList
    */
-  public static Conversion fromJson(String jsonString) throws IOException {
-    return JSON.getGson().fromJson(jsonString, Conversion.class);
+  public static CryptoExchangesList fromJson(String jsonString) throws IOException {
+    return JSON.getGson().fromJson(jsonString, CryptoExchangesList.class);
   }
 
   /**
-   * Convert an instance of Conversion to an JSON string
+   * Convert an instance of CryptoExchangesList to an JSON string
    *
    * @return JSON string
    */

@@ -15,6 +15,7 @@ package io.tradewatch.client.api;
 
 import io.tradewatch.client.ApiException;
 import io.tradewatch.client.model.CryptoConversion;
+import io.tradewatch.client.model.CryptoExchangesList;
 import io.tradewatch.client.model.CursorPageTCustomizedSymbolsOutFull;
 import io.tradewatch.client.model.HTTPValidationError;
 import io.tradewatch.client.model.LastQuote;
@@ -47,6 +48,19 @@ public class CryptoApiTest {
         String from = null;
         String to = null;
         CryptoConversion response = api.convert(from, to);
+        // TODO: test validations
+    }
+
+    /**
+     * Available Exchanges
+     *
+     * Get list of available cryptocurrency exchanges
+     *
+     * @throws ApiException if the Api call fails
+     */
+    @Test
+    public void cryptoGetExchangesTest() throws ApiException {
+        CryptoExchangesList response = api.cryptoGetExchanges();
         // TODO: test validations
     }
 
