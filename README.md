@@ -144,7 +144,7 @@ Class | Method | HTTP request | Description
 *CommoditiesApi* | [**getSymbols**](docs/CommoditiesApi.md#getSymbols) | **GET** /commodities/symbols | Available Symbols
 *CommoditiesApi* | [**getTypes**](docs/CommoditiesApi.md#getTypes) | **GET** /commodities/types | Available Types
 *CryptoApi* | [**convert**](docs/CryptoApi.md#convert) | **GET** /crypto/convert/{from}/{to} | Conversion
-*CryptoApi* | [**cryptoGetExchanges**](docs/CryptoApi.md#cryptoGetExchanges) | **GET** /crypto/exchanges | Available Exchanges
+*CryptoApi* | [**getExchanges**](docs/CryptoApi.md#getExchanges) | **GET** /crypto/exchanges | Available Exchanges
 *CryptoApi* | [**getQuote**](docs/CryptoApi.md#getQuote) | **GET** /crypto/symbols/{symbol} | Last Quote
 *CryptoApi* | [**getSymbols**](docs/CryptoApi.md#getSymbols) | **GET** /crypto/symbols | Available Symbols
 *CurrenciesApi* | [**convert**](docs/CurrenciesApi.md#convert) | **GET** /currencies/convert/{from}/{to} | Conversion

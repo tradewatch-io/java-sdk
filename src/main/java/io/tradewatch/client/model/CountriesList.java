@@ -51,7 +51,7 @@ import io.tradewatch.client.JSON;
 /**
  * A list of Countries
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-27T10:21:28.837121286Z[Etc/UTC]", comments = "Generator version: 7.11.0-SNAPSHOT")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-27T23:39:06.055481518Z[Etc/UTC]", comments = "Generator version: 7.11.0-SNAPSHOT")
 public class CountriesList {
   public static final String SERIALIZED_NAME_ITEMS = "items";
   @SerializedName(SERIALIZED_NAME_ITEMS)

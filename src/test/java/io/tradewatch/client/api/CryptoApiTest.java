@@ -59,8 +59,8 @@ public class CryptoApiTest {
      * @throws ApiException if the Api call fails
      */
     @Test
-    public void cryptoGetExchangesTest() throws ApiException {
-        CryptoExchangesList response = api.cryptoGetExchanges();
+    public void getExchangesTest() throws ApiException {
+        CryptoExchangesList response = api.getExchanges();
         // TODO: test validations
     }
 

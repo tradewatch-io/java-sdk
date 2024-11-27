@@ -48,7 +48,7 @@ import io.tradewatch.client.JSON;
 /**
  * A cryptocurrency exchange
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-27T10:21:28.837121286Z[Etc/UTC]", comments = "Generator version: 7.11.0-SNAPSHOT")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-27T23:39:06.055481518Z[Etc/UTC]", comments = "Generator version: 7.11.0-SNAPSHOT")
 public class CryptoExchangeItem {
   public static final String SERIALIZED_NAME_ID = "id";
   @SerializedName(SERIALIZED_NAME_ID)
@@ -64,6 +64,16 @@ public class CryptoExchangeItem {
   @SerializedName(SERIALIZED_NAME_YEAR_ESTABLISHED)
   @javax.annotation.Nonnull
   private Integer yearEstablished;
+
+  public static final String SERIALIZED_NAME_COUNTRY = "country";
+  @SerializedName(SERIALIZED_NAME_COUNTRY)
+  @javax.annotation.Nonnull
+  private String country;
+
+  public static final String SERIALIZED_NAME_WEBSITE = "website";
+  @SerializedName(SERIALIZED_NAME_WEBSITE)
+  @javax.annotation.Nonnull
+  private String website;
 
   public CryptoExchangeItem() {
   }
@@ -125,6 +135,44 @@ public class CryptoExchangeItem {
   }
 
 
+  public CryptoExchangeItem country(@javax.annotation.Nonnull String country) {
+    this.country = country;
+    return this;
+  }
+
+  /**
+   * Exchange country
+   * @return country
+   */
+  @javax.annotation.Nonnull
+  public String getCountry() {
+    return country;
+  }
+
+  public void setCountry(@javax.annotation.Nonnull String country) {
+    this.country = country;
+  }
+
+
+  public CryptoExchangeItem website(@javax.annotation.Nonnull String website) {
+    this.website = website;
+    return this;
+  }
+
+  /**
+   * Exchange website URL
+   * @return website
+   */
+  @javax.annotation.Nonnull
+  public String getWebsite() {
+    return website;
+  }
+
+  public void setWebsite(@javax.annotation.Nonnull String website) {
+    this.website = website;
+  }
+
+
 
   @Override
   public boolean equals(Object o) {
@@ -137,12 +185,14 @@ public class CryptoExchangeItem {
     CryptoExchangeItem cryptoExchangeItem = (CryptoExchangeItem) o;
     return Objects.equals(this.id, cryptoExchangeItem.id) &&
         Objects.equals(this.name, cryptoExchangeItem.name) &&
-        Objects.equals(this.yearEstablished, cryptoExchangeItem.yearEstablished);
+        Objects.equals(this.yearEstablished, cryptoExchangeItem.yearEstablished) &&
+        Objects.equals(this.country, cryptoExchangeItem.country) &&
+        Objects.equals(this.website, cryptoExchangeItem.website);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(id, name, yearEstablished);
+    return Objects.hash(id, name, yearEstablished, country, website);
   }
 
   @Override
@@ -152,6 +202,8 @@ public class CryptoExchangeItem {
     sb.append("    id: ").append(toIndentedString(id)).append("\n");
     sb.append("    name: ").append(toIndentedString(name)).append("\n");
     sb.append("    yearEstablished: ").append(toIndentedString(yearEstablished)).append("\n");
+    sb.append("    country: ").append(toIndentedString(country)).append("\n");
+    sb.append("    website: ").append(toIndentedString(website)).append("\n");
     sb.append("}");
     return sb.toString();
   }
@@ -177,12 +229,16 @@ public class CryptoExchangeItem {
     openapiFields.add("id");
     openapiFields.add("name");
     openapiFields.add("year_established");
+    openapiFields.add("country");
+    openapiFields.add("website");
 
     // a set of required properties/fields (JSON key names)
     openapiRequiredFields = new HashSet<String>();
     openapiRequiredFields.add("id");
     openapiRequiredFields.add("name");
     openapiRequiredFields.add("year_established");
+    openapiRequiredFields.add("country");
+    openapiRequiredFields.add("website");
   }
 
   /**
@@ -218,6 +274,12 @@ public class CryptoExchangeItem {
       }
       if (!jsonObj.get("name").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `name` to be a primitive type in the JSON string but got `%s`", jsonObj.get("name").toString()));
+      }
+      if (!jsonObj.get("country").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `country` to be a primitive type in the JSON string but got `%s`", jsonObj.get("country").toString()));
+      }
+      if (!jsonObj.get("website").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `website` to be a primitive type in the JSON string but got `%s`", jsonObj.get("website").toString()));
       }
   }
 

@@ -5,7 +5,7 @@ All URIs are relative to *https://api.tradewatch.io*
 | Method | HTTP request | Description |
 |------------- | ------------- | -------------|
 | [**convert**](CryptoApi.md#convert) | **GET** /crypto/convert/{from}/{to} | Conversion |
-| [**cryptoGetExchanges**](CryptoApi.md#cryptoGetExchanges) | **GET** /crypto/exchanges | Available Exchanges |
+| [**getExchanges**](CryptoApi.md#getExchanges) | **GET** /crypto/exchanges | Available Exchanges |
 | [**getQuote**](CryptoApi.md#getQuote) | **GET** /crypto/symbols/{symbol} | Last Quote |
 | [**getSymbols**](CryptoApi.md#getSymbols) | **GET** /crypto/symbols | Available Symbols |
 
@@ -88,9 +88,9 @@ public class Example {
 | **200** | Successful Response |  -  |
 | **422** | Validation Error |  -  |
 
-<a id="cryptoGetExchanges"></a>
-# **cryptoGetExchanges**
-> CryptoExchangesList cryptoGetExchanges()
+<a id="getExchanges"></a>
+# **getExchanges**
+> CryptoExchangesList getExchanges()
 
 Available Exchanges
 
@@ -125,10 +125,10 @@ public class Example {
 
     CryptoApi apiInstance = new CryptoApi(defaultClient);
     try {
-      CryptoExchangesList result = apiInstance.cryptoGetExchanges();
+      CryptoExchangesList result = apiInstance.getExchanges();
       System.out.println(result);
     } catch (ApiException e) {
-      System.err.println("Exception when calling CryptoApi#cryptoGetExchanges");
+      System.err.println("Exception when calling CryptoApi#getExchanges");
       System.err.println("Status code: " + e.getCode());
       System.err.println("Reason: " + e.getResponseBody());
       System.err.println("Response headers: " + e.getResponseHeaders());
