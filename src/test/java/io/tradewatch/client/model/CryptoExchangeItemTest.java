@@ -61,4 +61,20 @@ public class CryptoExchangeItemTest {
         // TODO: test yearEstablished
     }
 
+    /**
+     * Test the property 'country'
+     */
+    @Test
+    public void countryTest() {
+        // TODO: test country
+    }
+
+    /**
+     * Test the property 'website'
+     */
+    @Test
+    public void websiteTest() {
+        // TODO: test website
+    }
+
 }

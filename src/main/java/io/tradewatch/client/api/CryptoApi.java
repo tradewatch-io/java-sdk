@@ -219,7 +219,7 @@ public class CryptoApi {
         return localVarCall;
     }
     /**
-     * Build call for cryptoGetExchanges
+     * Build call for getExchanges
      * @param _callback Callback for upload/download progress
      * @return Call to execute
      * @throws ApiException If fail to serialize the request body object
@@ -230,7 +230,7 @@ public class CryptoApi {
         <tr><td> 200 </td><td> Successful Response </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call cryptoGetExchangesCall(final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call getExchangesCall(final ApiCallback _callback) throws ApiException {
         String basePath = null;
         // Operation Servers
         String[] localBasePaths = new String[] {  };
@@ -275,8 +275,8 @@ public class CryptoApi {
     }
 
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call cryptoGetExchangesValidateBeforeCall(final ApiCallback _callback) throws ApiException {
-        return cryptoGetExchangesCall(_callback);
+    private okhttp3.Call getExchangesValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+        return getExchangesCall(_callback);
 
     }
 
@@ -292,8 +292,8 @@ public class CryptoApi {
         <tr><td> 200 </td><td> Successful Response </td><td>  -  </td></tr>
      </table>
      */
-    public CryptoExchangesList cryptoGetExchanges() throws ApiException {
-        ApiResponse<CryptoExchangesList> localVarResp = cryptoGetExchangesWithHttpInfo();
+    public CryptoExchangesList getExchanges() throws ApiException {
+        ApiResponse<CryptoExchangesList> localVarResp = getExchangesWithHttpInfo();
         return localVarResp.getData();
     }
 
@@ -309,8 +309,8 @@ public class CryptoApi {
         <tr><td> 200 </td><td> Successful Response </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<CryptoExchangesList> cryptoGetExchangesWithHttpInfo() throws ApiException {
-        okhttp3.Call localVarCall = cryptoGetExchangesValidateBeforeCall(null);
+    public ApiResponse<CryptoExchangesList> getExchangesWithHttpInfo() throws ApiException {
+        okhttp3.Call localVarCall = getExchangesValidateBeforeCall(null);
         Type localVarReturnType = new TypeToken<CryptoExchangesList>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
     }
@@ -328,9 +328,9 @@ public class CryptoApi {
         <tr><td> 200 </td><td> Successful Response </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call cryptoGetExchangesAsync(final ApiCallback<CryptoExchangesList> _callback) throws ApiException {
+    public okhttp3.Call getExchangesAsync(final ApiCallback<CryptoExchangesList> _callback) throws ApiException {
 
-        okhttp3.Call localVarCall = cryptoGetExchangesValidateBeforeCall(_callback);
+        okhttp3.Call localVarCall = getExchangesValidateBeforeCall(_callback);
         Type localVarReturnType = new TypeToken<CryptoExchangesList>(){}.getType();
         localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
         return localVarCall;

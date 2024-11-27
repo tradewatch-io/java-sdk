@@ -11,6 +11,8 @@ A cryptocurrency exchange
 |**id** | **String** | Exchange identifier |  |
 |**name** | **String** | Exchange name |  |
 |**yearEstablished** | **Integer** | Exchange established year |  |
+|**country** | **String** | Exchange country |  |
+|**website** | **String** | Exchange website URL |  |
 
 
 
